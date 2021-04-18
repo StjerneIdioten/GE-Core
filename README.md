@@ -1,2 +1,2 @@
-# I3D-Core
-A Python package for interacting with I3D files used for Giants Engine games.
+# GE-Core
+A Python package for creating and interacting with any files used for modding Giants Engine games, such as .i3d files. 
