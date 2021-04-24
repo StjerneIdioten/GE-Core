@@ -1,0 +1,4 @@
+pytest
+lxml
+sphinx-rtd-theme
+sphinx-autodoc-typehints
