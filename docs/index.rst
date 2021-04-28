@@ -1,7 +1,11 @@
 Welcome to GE Core's documentation!
 =================================================
 
-Hello
+.. toctree::
+    :maxdepth: -1
+    :caption: Documentation:
+
+    architecture
 
 Indices and tables
 ==================
