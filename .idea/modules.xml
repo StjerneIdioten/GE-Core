@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/I3D-Core.iml" filepath="$PROJECT_DIR$/.idea/I3D-Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/GE-Core.iml" filepath="$PROJECT_DIR$/.idea/GE-Core.iml" />
     </modules>
   </component>
 </project>
