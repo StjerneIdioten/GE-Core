@@ -12,7 +12,7 @@ isolated_build = True
 envlist = py39
 
 [testenv]
-deps = pytest >= 6.2.4
-       -rrequirements.txt
+changedir = tests
+deps = -rrequirements/test.txt
 commands = pytest
 """
