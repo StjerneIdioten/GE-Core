@@ -11,7 +11,6 @@ def adapter_implementation(request):
 
 @pytest.fixture(autouse=True, scope='class')
 def adapter(request, adapter_implementation, resource_path_root):
-    print(f"CWD: {Path.cwd()}")
     request.cls.adapter = adapter_implementation(resource_path_root / 'test.xml')
 
 
