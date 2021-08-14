@@ -1,0 +1,2 @@
+# Specifies requirements for the library
+lxml

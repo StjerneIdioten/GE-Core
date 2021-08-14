@@ -1,0 +1,3 @@
+# Requirements for running pytest
+-r production.txt
+pytest

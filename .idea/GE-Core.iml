@@ -13,7 +13,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PackageRequirementsSettings">
-    <option name="requirementsPath" value="D:\Github\GE-Core\requirements.txt" />
+    <option name="requirementsPath" value="D:\Git\GE-Core\requirements\development.txt" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="GOOGLE" />

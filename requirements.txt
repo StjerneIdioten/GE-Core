@@ -1,4 +1,2 @@
-pytest
-lxml
-sphinx-rtd-theme
-sphinx-autodoc-typehints
+# This file exists to stay compatible with the expectation of a top-level requirements file
+-r requirements/production.txt
