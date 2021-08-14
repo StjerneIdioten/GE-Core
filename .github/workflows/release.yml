@@ -4,7 +4,7 @@ on:
   - workflow_dispatch
 
 jobs:
-  build:
+  build-test-publish:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -22,3 +22,8 @@ jobs:
           pip install tox tox-gh-actions
       - name: Test with tox
         run: tox
+      - name: Deploy with tox
+        env:
+            TWINE_USERNAME: "__token__"
+            TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
+        run: tox -e py39-deploy
