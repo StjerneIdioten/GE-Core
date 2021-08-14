@@ -4,3 +4,4 @@
 -r documentation.txt
 
 tox
+commitizen

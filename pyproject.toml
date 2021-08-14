@@ -8,8 +8,9 @@ build-backend = "setuptools.build_meta"
 [tool.tox]
 legacy_tox_ini = """
 [tox]
+envlist = py39
 isolated_build = True
-envlist = py39-tests
+skip_missing_interpreters = true
 
 [gh-actions]
 python =
