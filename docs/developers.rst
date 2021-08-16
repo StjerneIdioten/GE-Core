@@ -12,3 +12,7 @@ Developers
 `Tox GH Action <https://github.com/ymyzk/tox-gh-actions>`_
 
 `Commandline testing with pytest <https://github.com/tbekolay/pytest-cram>`_
+
+Pycharm
+^^^^^^^
+Pycharm can enable compatibility checks, when coding against multiple python versions.
