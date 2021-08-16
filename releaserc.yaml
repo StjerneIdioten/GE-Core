@@ -1,6 +1,6 @@
 {
   branches: [
-    {name: 'master', prerelease: 'dev', channel: false},
+    {name: 'master', prerelease: 'dev'},
   ],
   "plugins": [
     ["@semantic-release/commit-analyzer", {
@@ -58,7 +58,7 @@
       "shell": false
     }],
     ["@semantic-release/github", {
-      "assets": [{"path": "./dist/*.tar.gz", "label": "Ge-Core"}],
+      "assets": [{"path": "./tox/dist/*.tar.gz", "label": "Ge-Core"}],
       "failTitle": false
     }
     ],
