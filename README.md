@@ -3,8 +3,8 @@
 [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=103)](https://opensource.org/licenses/GPL-3.0/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/ge-core)](https://pypi.python.org/pypi/ge-core/)
-[![GitHub Actions (master)](https://github.com/StjerneIdioten/GE-Core/workflows/master/badge.svg)](https://github.com/StjerneIdioten/GE-Core)
-[![GitHub Actions (develop)](https://github.com/StjerneIdioten/GE-Core/workflows/develop/badge.svg)](https://github.com/StjerneIdioten/GE-Core)
+[![GitHub Actions (master)](https://github.com/StjerneIdioten/GE-Core/actions/workflows/master.yml/badge.svg)](https://github.com/StjerneIdioten/GE-Core)
+[![GitHub Actions (develop)](https://github.com/StjerneIdioten/GE-Core/actions/workflows/develop.yml/badge.svg)](https://github.com/StjerneIdioten/GE-Core)
 
 <p align="left">
   <a href="https://www.buymeacoffee.com/StjerneIdioten">Support Me</a> •
