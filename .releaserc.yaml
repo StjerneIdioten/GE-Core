@@ -7,7 +7,7 @@
       "preset": "angular",
       "releaseRules": [
         {"breaking": true, "release": "minor"},
-        {"type": "feat", "release": "patch"}
+        {"type": "feat", "release": "patch"},
         {"type": "refactor", "release": "patch"},
         {"type": "style", "release": false},
         {"type": "docs", "release": false},
@@ -54,7 +54,7 @@
       ]
     }],
     ["@semantic-release/exec", {
-      "prepareCmd": "tox -e py38"
+      "prepareCmd": "tox -e py38",
       "publishCmd": "tox -e py38-deploy",
       "shell": false
     }],
