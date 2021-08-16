@@ -4,7 +4,10 @@ on:
   push:
     branches:
       - master
-    paths-ignore: ['**/README.md' 'CONTRIBUTING.md' 'LICENSE']
+    paths-ignore:
+      - '**/README.md'
+      - 'CONTRIBUTING.md'
+      - 'LICENSE'
   pull_request:
     branches:
       - master
