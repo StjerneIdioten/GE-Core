@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 [tool.tox]
 legacy_tox_ini = """
 [tox]
-envlist = py{38,39}-{tests,docs}
+envlist = py{38,39}-{tests,docs, deploy}
 isolated_build = True
 skip_missing_interpreters = true
 
@@ -21,14 +21,17 @@ python =
 ACTION =
     test: tests
     doc: docs
+    release: deploy
 
 [testenv]
 changedir =
     {docs,docslocal}: docs
 
 passenv =
-    deploy: TWINE_USERNAME
     deploy: TWINE_PASSWORD
+
+setenv =
+    deploy: TWINE_USERNAME = __token__
 
 deps =
     tests: -r requirements/test.txt
