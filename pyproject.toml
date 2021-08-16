@@ -1,6 +1,6 @@
 [build-system]
 requires = [
-    "setuptools>=42",
+    "setuptools>=46.4",
     "wheel"
 ]
 build-backend = "setuptools.build_meta"
@@ -8,13 +8,19 @@ build-backend = "setuptools.build_meta"
 [tool.tox]
 legacy_tox_ini = """
 [tox]
-envlist = py39
+envlist = py{38,39}-{tests,docs}
 isolated_build = True
 skip_missing_interpreters = true
 
 [gh-actions]
 python =
+    3.8: py38
     3.9: py39
+
+[gh-actions:env]
+ACTION =
+    test: tests
+    doc: docs
 
 [testenv]
 changedir =
