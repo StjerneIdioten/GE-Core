@@ -1,7 +1,7 @@
 # GE-Core
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-![PyPI - License](https://img.shields.io/pypi/l/ge-core)
+![PyPI - License](https://img.shields.io/pypi/l/GE-Core)
 [![PyPI Supported Python Versions](https://img.shields.io/pypi/pyversions/ge-core)](https://pypi.python.org/pypi/ge-core/)
 
 [![GitHub Actions (master)](https://github.com/StjerneIdioten/GE-Core/actions/workflows/master.yml/badge.svg)](https://github.com/StjerneIdioten/GE-Core)
