@@ -42,5 +42,5 @@ commands =
     tests: pytest {posargs:tests/}
     docslocal: sphinx-autobuild -b dirhtml -d {envtmpdir}/doctrees . {envtmpdir}/html
     docs: sphinx-build -d "{toxworkdir}/docs_doctree" . "{toxworkdir}/docs_out" -b html {posargs}
-    deploy: python -m twine upload --repository testpypi "{toxworkdir}/dist/*"
+    deploy: python -m twine upload "{toxworkdir}/dist/*"
 """
