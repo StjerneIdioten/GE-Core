@@ -56,7 +56,6 @@
     ["@semantic-release/exec", {
       "prepareCmd": "tox -e py38",
       "publishCmd": "tox -e py38-deploy",
-      "shell": false
     }],
     ["@semantic-release/github", {
       "assets": [{"path": "./tox/dist/*.tar.gz", "label": "Ge-Core"}],
