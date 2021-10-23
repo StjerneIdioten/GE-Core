@@ -11,6 +11,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.9 (GE-Core)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="addon" />
   </component>
   <component name="PackageRequirementsSettings">
     <option name="requirementsPath" value="D:\Git\GE-Core\requirements\development.txt" />

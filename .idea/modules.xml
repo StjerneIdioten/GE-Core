@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/GE-Core.iml" filepath="$PROJECT_DIR$/.idea/GE-Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../I3D-Blender-Addon/addon/.idea/addon.iml" filepath="$PROJECT_DIR$/../I3D-Blender-Addon/addon/.idea/addon.iml" />
     </modules>
   </component>
 </project>

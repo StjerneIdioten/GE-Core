@@ -1,5 +1,5 @@
 from abc import (ABC, abstractmethod)
 
 
-class ISource(ABC):
+class Source(ABC):
     pass

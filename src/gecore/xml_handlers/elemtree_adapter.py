@@ -2,10 +2,10 @@ import logging
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
-from gecore.xml_handlers.xml_interface import XMLInterface
+from gecore.xml_handlers import (XMLWriter, XMLReader)
 
 
-class EtreeAdapter(XMLInterface):
+class EtreeAdapter(XMLWriter, XMLReader):
     def __init__(self, filename: Path):
         self.logger = logging.getLogger(__name__)
         try:

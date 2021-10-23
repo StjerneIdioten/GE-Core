@@ -1,5 +1,5 @@
 from abc import (ABC, abstractmethod)
 
 
-class IDestination(ABC):
+class Destination(ABC):
     pass

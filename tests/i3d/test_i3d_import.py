@@ -1,4 +1,4 @@
 import pytest
-from gecore.converters.i3d import i3d_reader
+from gecore.conversion.i3d import i3d_source
 
 
