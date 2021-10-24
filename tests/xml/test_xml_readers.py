@@ -1,12 +1,12 @@
 import pytest
 from pathlib import Path
-from gecore.xml_handlers import LXMLReader
+from gecore.xml_handlers import EtreeReader
 
 pytest.skip("Not Implemented Yet", allow_module_level=True)
 
 
 # Enables all xml readers to be tested at once with the same tests, by adding them to the list
-@pytest.fixture(params=[LXMLReader], scope="module")
+@pytest.fixture(params=[EtreeReader], scope="module")
 def reader_implementation(request):
     return request.param
 

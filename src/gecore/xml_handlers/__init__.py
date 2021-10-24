@@ -1,2 +1,2 @@
 from .xml_interface import (XMLWriter, XMLReader)
-from .lxml_adapter import (LXMLReader, LXMLWriter)
+from .etree_adapter import (EtreeWriter, EtreeReader)

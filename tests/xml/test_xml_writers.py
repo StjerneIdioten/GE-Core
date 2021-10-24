@@ -1,7 +1,7 @@
 import pytest
-from lxml import etree
+import xml.etree.ElementTree as ET
 from pathlib import Path
-from gecore.xml_handlers import LXMLWriter
+from gecore.xml_handlers import EtreeWriter
 
 
 class TestXmlWriters:
@@ -12,26 +12,24 @@ class TestXmlWriters:
                            'xmlns:testns': 'http://test.test/testnamespace.xsd'
                            }
         test_file = tmp_path / 'basic_write.xml'
+        print(test_file)
         test_element_name = 'TestElement'
-        xml_writer = LXMLWriter(test_file, test_element_name, test_xml_root_attributes)
+        xml_writer = EtreeWriter(test_file, test_element_name, test_xml_root_attributes)
 
         settings = {
             'xml_declaration': True,
             'encoding': 'iso-8859-1',
-            'method': 'xml',
-            'pretty_print': True
+            'method': 'xml'
         }
 
         xml_writer.write_to_file(settings)
 
-        # Read result using lxml
-        tree = etree.parse(str(test_file))
-
-        # Test document info
-        assert tree.docinfo.xml_version == '1.0'
-        assert tree.docinfo.encoding == 'iso-8859-1'
+        # Test document xml declaration
+        with open(test_file, 'r') as f:
+            assert f.readline().rstrip('\n\r') == "<?xml version='1.0' encoding='iso-8859-1'?>"
 
         # Test root element
+        tree = ET.parse(str(test_file))
         root = tree.getroot()
         assert root.tag == test_element_name
         assert root.attrib['name'] == 'TestName'
