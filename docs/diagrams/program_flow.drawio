@@ -1,0 +1,87 @@
+<mxfile host="Electron" modified="2021-10-21T14:44:22.865Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.4.0 Chrome/91.0.4472.164 Electron/13.5.0 Safari/537.36" etag="AqGHILZJ0qNmSHPMhlS9" compressed="false" version="15.4.0" type="device">
+  <diagram id="hwVqXl1dW62VN3QQH9Wu" name="Page-1">
+    <mxGraphModel dx="569" dy="329" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-41" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="330" y="257" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-42" value="1" style="ellipse;whiteSpace=wrap;aspect=fixed;fillColor=#000000;verticalAlign=middle;fontColor=#FFFFFF;align=center;fontSize=10;" parent="0ZE_g4TfK-DJ6EbdBVgK-41" vertex="1">
+          <mxGeometry width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-43" value="Selects Objects" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Roboto Slab;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto%2BSlab;fontSize=10;allowArrows=0;connectable=0;recursiveResize=0;autosize=1;" parent="0ZE_g4TfK-DJ6EbdBVgK-41" vertex="1">
+          <mxGeometry x="20" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#494949;snapToPoint=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="0ZE_g4TfK-DJ6EbdBVgK-55" target="0ZE_g4TfK-DJ6EbdBVgK-46" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="280" as="targetPoint" />
+            <mxPoint x="280" y="280" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="400" y="280" />
+              <mxPoint x="400" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-45" value="" style="group;rotatable=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="440" y="240" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-46" value="" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;comic=0;fontFamily=Roboto Slab;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto%2BSlab;fontColor=#494949;strokeColor=#494949;fillColor=#C2C2C2;gradientColor=none;align=left;verticalAlign=middle;container=0;collapsible=0;rotatable=0;arcSize=10;" parent="0ZE_g4TfK-DJ6EbdBVgK-45" vertex="1">
+          <mxGeometry y="10" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-47" value="Blender Addon" style="rounded=1;shadow=0;glass=0;comic=0;fontFamily=Roboto Slab;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto%2BSlab;fontColor=#494949;strokeColor=#494949;fillColor=#F7F7F7;gradientColor=none;align=center;verticalAlign=middle;part=0;connectable=0;allowArrows=0;rotatable=0;horizontal=1;arcSize=10;fontStyle=1;whiteSpace=wrap;recursiveResize=0;container=1;collapsible=0;" parent="0ZE_g4TfK-DJ6EbdBVgK-45" vertex="1">
+          <mxGeometry width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-48" value="" style="shape=image;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" parent="0ZE_g4TfK-DJ6EbdBVgK-45" vertex="1">
+          <mxGeometry x="100" y="-5" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#494949;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="0ZE_g4TfK-DJ6EbdBVgK-55" target="0ZE_g4TfK-DJ6EbdBVgK-46" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="320" as="targetPoint" />
+            <mxPoint x="280" y="280" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="320" y="280" />
+              <mxPoint x="320" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-52" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="330" y="287" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-53" value="2" style="ellipse;whiteSpace=wrap;aspect=fixed;fillColor=#000000;verticalAlign=middle;fontColor=#FFFFFF;align=center;fontSize=10;" parent="0ZE_g4TfK-DJ6EbdBVgK-52" vertex="1">
+          <mxGeometry width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-54" value="Press Export" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Roboto Slab;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto%2BSlab;fontSize=10;allowArrows=0;connectable=0;recursiveResize=0;autosize=1;" parent="0ZE_g4TfK-DJ6EbdBVgK-52" vertex="1">
+          <mxGeometry x="20" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-57" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="230" y="240" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-55" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;fontColor=#494949;fillColor=#EBB884;image=https://www.svgrepo.com/show/5319/user.svg;" parent="0ZE_g4TfK-DJ6EbdBVgK-57" vertex="1">
+          <mxGeometry width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-56" value="User" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#494949;fontFamily=Roboto Slab;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto%2BSlab;" parent="0ZE_g4TfK-DJ6EbdBVgK-57" vertex="1">
+          <mxGeometry x="20" y="80" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-58" value="" style="group;rotatable=0;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="640" y="240" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-59" value="" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;comic=0;fontFamily=Roboto Slab;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto%2BSlab;fontColor=#494949;strokeColor=#494949;fillColor=#C2C2C2;gradientColor=none;align=left;verticalAlign=middle;container=0;collapsible=0;rotatable=0;arcSize=10;" parent="0ZE_g4TfK-DJ6EbdBVgK-58" vertex="1">
+          <mxGeometry y="10" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="0ZE_g4TfK-DJ6EbdBVgK-60" value="GE-Core" style="rounded=1;shadow=0;glass=0;comic=0;fontFamily=Roboto Slab;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto%2BSlab;fontColor=#494949;strokeColor=#494949;fillColor=#F7F7F7;gradientColor=none;align=center;verticalAlign=middle;part=0;connectable=0;allowArrows=0;rotatable=0;horizontal=1;arcSize=10;fontStyle=1;whiteSpace=wrap;recursiveResize=0;container=1;collapsible=0;" parent="0ZE_g4TfK-DJ6EbdBVgK-58" vertex="1">
+          <mxGeometry width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hiAePaw7em1H-WFChss9-9" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="140" y="400" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="hiAePaw7em1H-WFChss9-5" value="Describe stuff here" style="rounded=0;whiteSpace=wrap;fontFamily=Roboto Slab;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto%2BSlab;fontColor=#464646;fillColor=#F5F5F5;strokeColor=none;align=left;verticalAlign=top;spacing=16;fontSize=10;" vertex="1" parent="hiAePaw7em1H-WFChss9-9">
+          <mxGeometry x="20" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="hiAePaw7em1H-WFChss9-6" value="1" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Roboto Slab;fontColor=#B8B8B8;fontSize=32;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto%2BSlab;" vertex="1" parent="hiAePaw7em1H-WFChss9-9">
+          <mxGeometry width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

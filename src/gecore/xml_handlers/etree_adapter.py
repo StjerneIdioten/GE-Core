@@ -3,7 +3,7 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 from typing import Dict
 
-from gecore.xml_handlers import (XMLWriter, XMLReader)
+from gecore.xml_handlers import (XMLWriter, XMLReader, XPath)
 
 
 class EtreeWriter(XMLWriter):
@@ -11,20 +11,22 @@ class EtreeWriter(XMLWriter):
         self.log = logging.getLogger(__name__)
         self._file = file
         self._root = ET.Element(root_name, root_attrib)
-        self._current_element = self._root
+        self._current_element = None
 
-    def write_to_file(self, settings=None):
-        settings = {'xml_declaration': True,
-                    'encoding': 'iso-8859-1',
-                    'method': 'xml'
-                    } if settings is None else settings
-
+    def write_to_file(self, xml_declaration=True, encoding='iso-8859-1'):
         tree = ET.ElementTree(self._root)
         ET.indent(tree)
-        tree.write(self._file, **settings)
+        tree.write(self._file, xml_declaration=xml_declaration, encoding=encoding, method='xml')
+
+    def select_element(self, element: XPath):
+        pass
 
     def create_element(self, name: str, parent=None, attrib: Dict[str, str] = None):
-        pass
+        if parent is None:
+            pass
+
+    def sub_element(self, name: str, attrib: Dict[str, str] = None):
+        self._current_element = ET.SubElement(self._current_element, name, attrib)
 
 
 class EtreeReader(XMLReader):
