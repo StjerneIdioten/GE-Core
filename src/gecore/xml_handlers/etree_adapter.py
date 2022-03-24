@@ -1,16 +1,16 @@
 import logging
 from pathlib import Path
 import xml.etree.ElementTree as ET
-from typing import Dict
+from typing import (Dict, Optional)
 
 from gecore.xml_handlers import (XMLWriter, XMLReader, XPath)
 
 
 class EtreeWriter(XMLWriter):
-    def __init__(self, file: Path, root_name: str, root_attrib: Dict[str, str]):
+    def __init__(self, file: Path, root_name: str = 'root', root_attrib: Dict[str, str] = None):
         self.log = logging.getLogger(__name__)
         self._file = file
-        self._root = ET.Element(root_name, root_attrib)
+        self._root = ET.Element(root_name, root_attrib or {})
         self._current_element = None
 
     def write_to_file(self, xml_declaration=True, encoding='iso-8859-1'):
@@ -18,15 +18,21 @@ class EtreeWriter(XMLWriter):
         ET.indent(tree)
         tree.write(self._file, xml_declaration=xml_declaration, encoding=encoding, method='xml')
 
-    def select_element(self, element: XPath):
-        pass
+    def create_element(self, tag: str, xpath_parent=None, attrib: Dict[str, str] = None) -> XPath:
+        if xpath_parent is None:
+            parent_element = self._root
+            xpath_parent = f"."
+        else:
+            parent_element = self._root.find(xpath_parent)
+            if parent_element is None:
+                raise ValueError("The given parent xpath does not resolve to an element")
 
-    def create_element(self, name: str, parent=None, attrib: Dict[str, str] = None):
-        if parent is None:
-            pass
+        # This checks if there are already multiple children with the same tag and assigns the proper index to the xpath
+        # for the new element
+        path_to_element = f"{xpath_parent}/{tag}[{len(parent_element.findall(f'./{tag}'))+1}]"
 
-    def sub_element(self, name: str, attrib: Dict[str, str] = None):
-        self._current_element = ET.SubElement(self._current_element, name, attrib)
+        ET.SubElement(parent_element, tag, attrib or {})
+        return path_to_element
 
 
 class EtreeReader(XMLReader):

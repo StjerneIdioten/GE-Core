@@ -11,19 +11,11 @@ class XMLWriter(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def select_element(self, element: XPath):
-        raise NotImplementedError
-
-    @abstractmethod
     def write_to_file(self, xml_declaration=True, encoding='iso-8859-1'):
         raise NotImplementedError
 
     @abstractmethod
-    def create_element(self, name: str, parent: Optional[XPath], attrib: Dict[str, str] = None):
-        raise NotImplementedError
-
-    @abstractmethod
-    def sub_element(self, name: str, attrib: Dict[str, str] = None):
+    def create_element(self, name: str, xpath_parent: Optional[XPath], attrib: Dict[str, str] = None) -> XPath:
         raise NotImplementedError
 
 
