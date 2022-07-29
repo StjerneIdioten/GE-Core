@@ -1,0 +1,54 @@
+{
+  "version": "2.0.0",
+  "options": {
+    "cwd": "${workspaceFolder}",
+    "env": { "PYTHONUNBUFFERED": "1" }
+  },
+  "tasks": [
+    {
+      "label": "Tox - Test 3.10",
+      "type": "shell",
+      "detail": "Runs only the tests for Python 3.10",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-m", "tox", "-e", "py310-tests"],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Tox - Run All Tests",
+      "type": "shell",
+      "detail": "Runs the whole Tox unit test suite",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-m", "tox", "-e", "'py{39,310}-tests'"],
+      "group": {
+        "kind": "test",
+        "isDefault": false
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Tox - Local Documentation Server",
+      "type": "shell",
+      "detail": "Starts a webserver on http://127.0.0.1:8000, which serves the documentation and autoupdates on changes",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-m", "tox", "-e", "'py310-docserver'"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "close": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
